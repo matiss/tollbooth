@@ -5,8 +5,8 @@ import (
 
 	"github.com/didip/tollbooth"
 	"github.com/didip/tollbooth/thirdparty/tollbooth_echo"
-	"github.com/webx-top/echo"
-	"github.com/webx-top/echo/engine/standard"
+	"github.com/labstack/echo"
+	"github.com/labstack/echo/engine/standard"
 )
 
 func main() {

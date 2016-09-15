@@ -7,8 +7,8 @@ import (
 	"github.com/didip/tollbooth/config"
 	"github.com/didip/tollbooth/errors"
 	"github.com/didip/tollbooth/libstring"
-	"github.com/webx-top/echo"
-	"github.com/webx-top/echo/engine"
+	"github.com/labstack/echo"
+	"github.com/labstack/echo/engine"
 )
 
 func LimitMiddleware(limiter *config.Limiter) echo.MiddlewareFunc {
