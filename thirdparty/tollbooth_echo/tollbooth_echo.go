@@ -12,7 +12,7 @@ import (
 )
 
 func LimitMiddleware(limiter *config.Limiter) echo.MiddlewareFunc {
-	return func(h echo.Handler) echo.Handler {
+	return func(h echo.HandlerFunc) echo.HandlerFunc {
 		return echo.HandlerFunc(func(c echo.Context) error {
 			httpError := LimitByRequest(limiter, c.Request())
 			if httpError != nil {
